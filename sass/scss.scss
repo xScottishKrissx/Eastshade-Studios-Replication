@@ -29,12 +29,18 @@
   img{
   width: 100%;
   }
+  @include sexy-hr;
+  hr{
+    height: 3px;
+    margin-top: 0px;
+  }
 }
 
 
 
 
 .container{
+  //border: 1px solid white;
   .row{
     div{
       font-size: 5rem;
@@ -46,6 +52,66 @@
     }
   }
 }
+#title-logo{
+  width: 100%;
+}
+
+#subtitle{
+  margin-bottom: 5rem;
+  div{
+  @include sexy-hr;
+    p{
+      font-size: 2rem;
+    }
+  }
+}
+
+.image-gallery{
+  .row{
+    //  margin: 0;
+    text-align: center;
+    :nth-child(4){
+      margin-bottom: 3rem;
+    }
+    div{.
+
+
+      padding: 0;
+      a{
+        img{
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+.game-description{
+  div{
+    .row{
+      div{
+        display: table;
+        img{
+          display: table-cell;
+          vertical-align: middle;
+        }
+        p{
+          display: table-cell;
+          font-size: 2rem;
+          text-align: left;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+
+
+iframe{
+  width: 100%;
+}
+
 
 
 @import "_media-queries.scss";

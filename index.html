@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/scss.css">
     <title>Replica - Eastshade Studios</title>
   </head>
@@ -18,6 +18,7 @@
 
     <div class="banner">
         <img src="assets/img/banner.jpg" alt="">
+        <hr/>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -49,48 +50,69 @@
 
       <div class="row">
         <div class="col-12">
-          <p>Title</p>
+          <img id="title-logo" src="assets/img/title.png" alt="welcome to eastshade" />
         </div>
       </div>
 
-      <div class="row">
+      <div class="row " id="subtitle">
         <div class="col-12">
-          <p>sub-title</p>
+          <hr/>
+          <p >A first-person, open world exploration game being developed for PC</p>
+          <hr />
         </div>
       </div>
 
 
       <div class="row">
         <div class="col-12">
-          <p>video</p>
+          <iframe width="1080" height="608" src="https://www.youtube.com/embed/FHPWlZYTNNg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 image-gallery">
           <div class="row">
+
             <div class="col-3">
-              <p>image</p>
-            </div>
-            <div class="col-3">
-              <p>image</p>
-            </div>
-            <div class="col-3">
-              <p>image</p>
-            </div>
-            <div class="col-3">
-              <p>image</p>
+              <a href="images/inn-2.jpg" data-lightbox="car" data-title="Caption" data-alt="image-1" showImageNumberLabel >
+                <img src="images/inn-2.jpg" />
+              </a>
             </div>
 
             <div class="col-3">
-              <p>image</p>
+              <a href="images/lyndow-final.jpg" data-lightbox="car" data-title="Caption" data-alt="image-1" showImageNumberLabel >
+                <img src="images/lyndow-final.jpg" />
+              </a>
+            </div>
+
+            <div class="col-3">
+              <a href="images/eastshade-watchtower-2.jpg" data-lightbox="car" data-title="Caption" data-alt="image-1" showImageNumberLabel >
+                <img src="images/eastshade-watchtower-2.jpg" />
+              </a>
             </div>
             <div class="col-3">
-              <p>image</p>
+              <a href="images/town-hall.jpg" data-lightbox="car" data-title="Caption" data-alt="image-1" showImageNumberLabel >
+                <img src="images/town-hall.jpg" />
+              </a>
+            </div>
+            <br />
+            <div class="col-3">
+              <a href="images/camp.jpg" data-lightbox="car" data-title="Caption" data-alt="image-1" showImageNumberLabel >
+                <img src="images/camp.jpg" />
+              </a>
             </div>
             <div class="col-3">
-              <p>image</p>
+              <a href="images/midday-eclipse.jpg" data-lightbox="car" data-title="Caption" data-alt="image-1" showImageNumberLabel >
+                <img src="images/midday-eclipse.jpg" />
+              </a>
             </div>
             <div class="col-3">
-              <p>image</p>
+              <a href="images/eastshade-river-2.jpg" data-lightbox="car" data-title="Caption" data-alt="image-1" showImageNumberLabel >
+                <img src="images/eastshade-river-2.jpg" />
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="images/tent-on-the-edge.jpg" data-lightbox="car" data-title="Caption" data-alt="image-1" showImageNumberLabel >
+                <img src="images/tent-on-the-edge.jpg" />
+              </a>
             </div>
           </div>
 
@@ -106,20 +128,26 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row game-description">
         <div class="col-12">
           <div class="row">
             <div class="col-6">
-              <p>game-description</p>
+
+              <img src="assets/img/game-description-icons/icon_speech.png" alt="">
+              
+              <p>Interact with the locals through dynamic conversations with discoverable topics and branching dialogue</p>
             </div>
             <div class="col-6">
-              <p>game-description</p>
+              <img src="assets/img/game-description-icons/icon_speech.png" alt="">
+              <p>Interact with the locals through dynamic conversations with discoverable topics and branching dialogue</p>
             </div>
             <div class="col-6">
-              <p>game-description</p>
+              <img src="assets/img/game-description-icons/icon_speech.png" alt="">
+              <p>Interact with the locals through dynamic conversations with discoverable topics and branching dialogue</p>
             </div>
             <div class="col-6">
-              <p>game-description</p>
+              <img src="assets/img/game-description-icons/icon_speech.png" alt="">
+              <p>Interact with the locals through dynamic conversations with discoverable topics and branching dialogue</p>
             </div>
           </div>
         </div>
@@ -157,8 +185,26 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Lightbox -->
+    <script src="js/lightbox.min.js">
+
+    </script>
+    <script type="text/javascript">
+    lightbox.option({
+      'imageFadeDuration':0,
+      'resizeDuration': 500,
+      'fadeDuration' : 0,
+      'imageFadeDuration' : 0,
+      'wrapAround' : true
+    })
+
+
+    </script>
+
+    <script src="js/js.js"></script>
   </body>
 </html>

@@ -3,3 +3,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@mixin sexy-hr {
+  hr{
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgba(255, 255, 255, 0.5)), to(#fff0));
+  }
+}

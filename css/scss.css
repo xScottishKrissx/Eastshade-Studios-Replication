@@ -19,11 +19,62 @@
 
 .banner img {
   width: 100%; }
+.banner hr {
+  display: block;
+  border: none;
+  color: white;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgba(255, 255, 255, 0.5)), to(#fff0)); }
+.banner hr {
+  height: 3px;
+  margin-top: 0px; }
 
 .container .row div {
   font-size: 5rem; }
   .container .row div p {
     color: white;
     text-align: center; }
+
+#title-logo {
+  width: 100%; }
+
+#subtitle {
+  margin-bottom: 5rem; }
+  #subtitle div hr {
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(rgba(255, 255, 255, 0.5)), to(#fff0)); }
+  #subtitle div p {
+    font-size: 2rem; }
+
+.image-gallery .row {
+  text-align: center; }
+  .image-gallery .row :nth-child(4) {
+    margin-bottom: 3rem; }
+  .image-gallery .row div {
+    .
+
+
+      padding: 0; }
+    .image-gallery .row div a img {
+      width: 250px; }
+
+.game-description div .row div {
+  display: table; }
+  .game-description div .row div img {
+    display: table-cell;
+    vertical-align: middle; }
+  .game-description div .row div p {
+    display: table-cell;
+    font-size: 2rem;
+    text-align: left;
+    vertical-align: middle; }
+
+iframe {
+  width: 100%; }
 
 /*# sourceMappingURL=scss.css.map */
