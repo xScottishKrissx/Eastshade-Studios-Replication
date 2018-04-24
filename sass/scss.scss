@@ -1,0 +1,51 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import "_mixins.scss";
+@import "_variables.scss";
+
+.background-image{
+  @include background-image-cover;
+  background-image: url("/assets/img/background.jpg");
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: -100;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  #navbar-items{
+    ul{
+      font-size: 3rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.banner{
+  img{
+  width: 100%;
+  }
+}
+
+
+
+
+.container{
+  .row{
+    div{
+      font-size: 5rem;
+      //height: 10rem;
+      p{
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@import "_media-queries.scss";
