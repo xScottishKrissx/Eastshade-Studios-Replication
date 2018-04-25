@@ -1,0 +1,37 @@
+@media only screen and (max-width: 575.98px) {
+  .container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .image-gallery{
+    .row{
+      div{
+        a{
+          img{
+            width: 100%;
+            padding-left: 0rem;
+            padding-right: 0rem;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: $small-laptop) {
+  #subtitle{
+    div{
+      p{
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+      }
+    }
+  }
+  .steam-link{
+    iframe{
+      width: 70rem;
+    }
+  }
+}
