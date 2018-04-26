@@ -11,20 +11,94 @@
   z-index: -100;
 }
 
+.display-menu{
+  display: block !important;
+}
+.expand-height{
+  height:19rem !important;
+}
+
 .navbar{
-  position: fixed;
+  background-color: #242527;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  position: relative;
   top: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 100000;
+  .logo{
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    text-align: center;
+    img{
+      max-width: 40rem;
+      width: 40%;
+    }
+  }
+  .select-page{
+    background-color: #212225;
+    color: $grey;
+    margin: 0 auto;
+    padding: 0.5rem;
+    //border: 1px solid white;
+    width: $nav-width;
+    div{
+      float: left;
+      font-weight: bold;
+      padding-left: 1rem;
+    }
+    button{
+      border:none;
+      float: right;
+      padding-right: 1rem;
+      &:focus{
+        outline:none;
+      }
+    }
+  }
 
-  #navbar-items{
+  #navbar-dropdown{
+  display: block;
+  height: 0;
     ul{
-      font-size: 3rem;
+      background-color: #242527;
+      height: 0rem;
+      margin-top: 2rem;
+      overflow: hidden;
+      transition: all 1s;
+
+
+      width: $nav-width;
+      //font-size: 3rem;
       margin: 0 auto;
+      .lazy-dev{
+        border-top:5px solid #2ea3f2;
+        margin-top: 2rem;
+      }
+      li{
+        line-height: 1rem;
+        a{
+          color: $grey;
+          font-weight: bold;
+          padding-left: 2rem;
+          padding-top: 2rem;
+        }
+        ::after{content: none;}
+
+      }
     }
   }
 }
-
+  .dropdown-menu{
+    background-color: transparent;
+    border:none;
+    display: block;
+    a{
+      color: $grey;
+      font-size: 1.5rem;
+      margin-left: 2rem;
+    }
+  }
 
 .banner{
   img{
@@ -195,7 +269,7 @@
   position: fixed;
   bottom: 13rem;
   display: table;
-  right: -10%;
+  right: -100%;
   width: 5rem;
   height: 5rem;
   background-color: rgba(0, 0, 0, 0.5);
@@ -208,6 +282,9 @@
     text-align: center;
     vertical-align: middle;
   }
+}
+.show-scroll-to-top{
+  right:0%;
 }
 
 iframe{

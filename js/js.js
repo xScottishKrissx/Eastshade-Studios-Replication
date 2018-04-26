@@ -28,6 +28,12 @@ $(document).ready(function() {
       document.querySelector(".scroll-to-top-btn").style.right="0";
     }
 
+    $(".navbar-toggler").on("click", function(){
+      $("#navbar-dropdown").toggleClass("display-menu");
+      $("#navbar-dropdown ul").toggleClass("expand-height");
+      console.log("click");
+    })
+
 
 
 })
@@ -37,7 +43,7 @@ $(window).on("scroll", function(){
   //Show or Hide Depending on Position
   if ($(window).scrollTop() < 100) {
     $(".scroll-to-top-btn").css("visibility","hidden");
-    $(".scroll-to-top-btn").css("right","-10%");
+    $(".scroll-to-top-btn").css("right","-100%");
 
   }else if($(window).scrollTop() > 100){
       $(".scroll-to-top-btn").css("visibility","visible");

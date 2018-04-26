@@ -21,6 +21,36 @@
 }
 
 @media only screen and (min-width: $small-laptop) {
+
+  //Navbar
+  .navbar{
+    .desktop-logo{margin: initial;}
+    .mobile-logo{display: none;}
+    .select-page{display: none;}
+    #navbar-dropdown{
+      border: 1px solid white;
+      height: inherit;
+      ul{
+        border: 1px solid red;
+        height: inherit;
+        overflow: visible;
+        width: auto;
+        li{
+          border: none;
+          a{
+            margin: 0rem;
+            padding: 0rem;
+          }
+        }
+        .lazy-dev{border-top: none;}
+      }
+    }
+  }
+
+
+
+
+
   #subtitle{
     div{
       p{

@@ -16,35 +16,49 @@
     <div class="background-image"></div>
 
 
-    <div class="banner">
-        <img src="assets/img/banner.jpg" alt="">
-        <hr/>
-    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="logo mobile-logo">
+        <img src="assets/img/logo.png" alt="">
+      </div>
+
+      <div class="select-page">
+        <div class="">Select Page</div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-dropdownCUSTOM" aria-controls="navbar-dropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbar-items">
+        </button>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="navbar-dropdown">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
+          <li class="nav-item active lazy-dev">
+            <a class="nav-link" href="#">Devblog <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Logo</a></li>
+          <div class="logo desktop-logo">
+            <img src="assets/img/logo.png" alt="">
+          </div>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
             <div class="dropdown-menu" aria-labelledby="dropdown05">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Eastshade</a>
+              <a class="dropdown-item" href="#">Leaving Lyndow</a>
             </div>
           </li>
+
         </ul>
 
       </div>
     </nav>
+
+    <div class="banner">
+        <img src="assets/img/banner.jpg" alt="">
+        <hr/>
+    </div>
 
     <div class="container">
 
