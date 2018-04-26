@@ -191,6 +191,25 @@
   #submit-btn{}
 }
 
+.scroll-to-top-btn{
+  position: fixed;
+  bottom: 13rem;
+  display: table;
+  right: -10%;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: all 1s;
+  span{
+    color: white;
+    display: table-cell;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
 iframe{
   width: 100%;
 }
