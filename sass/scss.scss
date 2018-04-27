@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
 @import "_mixins.scss";
 @import "_variables.scss";
+
+p, a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
 
 .background-image{
   @include background-image-cover;
@@ -26,6 +34,8 @@
   top: 0;
   width: 100%;
   z-index: 100000;
+
+  .desktop-logo{display: none;}
   .logo{
     margin: 0 auto;
     padding-bottom: 2rem;
@@ -82,8 +92,13 @@
           font-weight: bold;
           padding-left: 2rem;
           padding-top: 2rem;
+
+          &:hover{
+            background-color: none;
+            color: #827a7a;
+          }
         }
-        ::after{content: none;}
+        ::after{display: none;}
 
       }
     }
@@ -97,6 +112,10 @@
       color: $grey;
       font-size: 1.5rem;
       margin-left: 2rem;
+      &:hover{
+        background-color: $nav-grey;
+        color: #827a7a;
+      }
     }
   }
 
@@ -157,7 +176,10 @@
   margin-left: 0;
   margin-right: 0;
 }
+
 .video{padding: 0;}
+
+
 .image-gallery{
   //background-color: red;
   margin-top: 1rem;

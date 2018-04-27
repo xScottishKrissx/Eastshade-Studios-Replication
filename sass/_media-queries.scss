@@ -24,26 +24,64 @@
 
   //Navbar
   .navbar{
-    .desktop-logo{margin: initial;}
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: fixed;
+    top: -10%;
+    transition: all 1s;
+
+    .logo{padding-bottom: 0rem;}
+    .desktop-logo{
+      display: block;
+      margin: initial;
+      width: 15rem;
+      transition: all 1s;
+    }
     .mobile-logo{display: none;}
     .select-page{display: none;}
     #navbar-dropdown{
-      border: 1px solid white;
+      //border: 1px solid white;
       height: inherit;
       ul{
-        border: 1px solid red;
+        //border: 1px solid red;
         height: inherit;
         overflow: visible;
         width: auto;
+        .lazy-dev{margin-top: 0rem;}
         li{
           border: none;
+          font-size: 1.6rem;
+          padding-top: 1.1rem;
+
           a{
             margin: 0rem;
             padding: 0rem;
+            transition: all .5s;
+
           }
+          ::after{display: inline-flex;}
+        }
+        .dropdown{
+          //background-color: red;
         }
         .lazy-dev{border-top: none;}
       }
+    }
+  }
+  .dropdown-menu{
+    background-color: $nav-grey;
+    border-top:3px solid #2ea3f2;
+    display: none;
+    //margin-top: 1.2rem;
+    margin-top: 0rem;
+    padding: 2rem;
+    padding-right: 5rem;
+    .dropdown-item{
+
+      font-size: 1.5rem;
+      padding: 1.5rem !important;
+      transition: all .5s;
+
     }
   }
 

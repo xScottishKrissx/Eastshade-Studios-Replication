@@ -34,6 +34,11 @@ $(document).ready(function() {
       console.log("click");
     })
 
+  //Show Sub-Menu on hover , .navbar #navbar-dropdown ul , .dropdown-menu
+  $(".dropdown").hover(function(){
+    $(".dropdown .dropdown-menu").toggleClass("display-menu");
+    console.log("Hovered");
+  })
 
 
 })
@@ -49,5 +54,20 @@ $(window).on("scroll", function(){
       $(".scroll-to-top-btn").css("visibility","visible");
       $(".scroll-to-top-btn").css("right","0");
   };
+
+  //Pure JavaScript version of the above on a different element
+  var scrollPos = window.scrollY;
+  //console.log(scrollPos);
+  if (scrollPos > 100) {
+    //Show Nav
+    document.querySelector(".navbar").style.top="0%";
+    document.querySelector(".desktop-logo").style.width="15rem";
+  }else {
+    //Hide nav
+    document.querySelector(".navbar").style.top="-10%";
+    document.querySelector(".desktop-logo").style.width="22rem";
+
+
+  }
 
 })
