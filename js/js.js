@@ -16,6 +16,7 @@ $(document).ready(function() {
 
    //Detect Scroll Position on page load
     var pos = window.scrollY;
+    //var pos = $("window").scrollTop();
     console.log(pos);
 
     // Show or Hide Scroll to Top button based on scroll position
